@@ -1,0 +1,11 @@
+mat-icon{
+  padding: 10px;
+  color: black;
+  border: none;
+}
+.social{
+  margin: 0 5%;
+}
+.button-row{
+  float: right;
+}

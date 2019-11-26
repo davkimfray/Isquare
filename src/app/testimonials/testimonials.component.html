@@ -1,0 +1,66 @@
+<!-- <div class="testmon-container">
+ <div>
+   <h1>Testimonials</h1>
+   <button mat-flat-button >
+   <i class="material-icons">
+     arrow_back
+   </i>
+  </button>
+  </div>
+
+    <img src="../../assets/images/4.png" width="50%">
+
+  <div>
+    <button mat-flat-button >
+      <i class="material-icons">
+        arrow_forward
+      </i>
+    </button>
+  </div>
+
+</div>
+-->
+
+  <mat-carousel
+    timings="250ms ease-in"
+    [autoplay]="false"
+    interval="400"
+    color="primary"
+    maxWidth="500"
+    proportion="30"
+    slides="5"
+    [loop]="true"
+    [hideArrows]="false"
+    [hideIndicators]="true"
+    [useKeyboard]="false"
+    [useMouseWheel]="false"
+    orientation="ltr"
+    overlay-origin="false"
+  >
+    <!--[image]="slide.image"-->
+    <mat-carousel-slide
+      #matCarouselSlide overlayColor=" #F0F0F0"
+      *ngFor="let slide of slides; let i = index" >
+      <div class="testmon-container">
+
+        <div>
+          <h1>Testimonials</h1>
+          <p class="details">
+            <span class="person-name">Meet Jamila</span>
+            <br>
+            Testimony Description
+            vhv hv iyvv vg iyc vgh
+            cycyihvtyc ytcvhv htdrtd
+            7truguftctruhv” </p>
+          <p class="last-text">Testimony Description
+            vhv hv iyvv vg iyc vgh
+            cycyihvtyc ytcvhv htdrtd
+            7truguftctruhv” </p>
+        </div>
+
+        <img src="../../assets/images/{{slide}}" width="50%">
+
+
+      </div>
+    </mat-carousel-slide>
+  </mat-carousel>

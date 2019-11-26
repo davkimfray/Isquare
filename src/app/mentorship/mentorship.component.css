@@ -1,0 +1,32 @@
+.testmon-container {
+  display: flex;
+  wdth: 100%;
+  align-content: center;
+  margin: 0 5%;
+}
+
+.testmon-container div{
+  margin: 2% auto;
+}
+
+h1{
+  font-size: 36px;
+}
+p{
+  color: #939393;
+  font-size: 24px;
+}
+
+i {
+  font-size: 50px;
+}
+.txt-raise-fund {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 82px;
+  color: #FFFFFF;
+}
+.btn-raise-fund {
+  padding: 0 30px;
+  background-color: #1FBF12;
+}

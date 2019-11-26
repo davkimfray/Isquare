@@ -1,0 +1,48 @@
+.card-container {
+  display: flex;
+  align-content: center;
+}
+
+.project-card {
+  max-width: 300px;
+  padding-bottom: 30px;
+  margin: 2% auto 0 auto;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #C4C4C4;
+  /*
+  margin: 125px 30px 0 0;
+  */
+  position: absolute;
+  top: 35%;
+  right: 7%;
+}
+mat-card {
+  border: 3px solid #128608;
+}
+
+mat-progress-bar {
+  margin: 10px 0;
+  height: 10px;
+  border-radius: 20px;
+}
+
+::ng-deep .mat-progress-bar-fill::after {
+  background-color: #128608;
+  border-radius: 5px;
+}
+::ng-deep .mat-progress-bar-buffer {
+  background-color: #6EB781;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    display: block;
+    align-content: center;
+  }
+
+}

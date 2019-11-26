@@ -1,0 +1,58 @@
+.banner::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+}
+mat-carousel{
+  z-index: 0;
+}
+.banner{
+  position: relative;
+}
+.overlay-text {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: #FFFFFF;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  z-index: 10;
+}
+
+.txt-better-economy {
+  font-size: 24px;
+}
+
+.txt-raise-fund {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 82px;
+  color: #FFFFFF;
+}
+.btn-raise-fund {
+  padding: 0 30px;
+  background-color: #1FBF12;
+}
+
+@media (max-width: 768px) {
+  .txt-raise-fund {
+    font-size: 20px;
+    line-height: 42px;
+  }
+  .btn-raise-fund {
+    padding: 10px 30px;
+  }
+  .txt-better-economy {
+    font-size: 16px;
+  }
+
+}

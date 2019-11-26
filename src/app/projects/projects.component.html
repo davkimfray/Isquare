@@ -1,0 +1,74 @@
+<div *ngIf="!mobile" class="card-container">
+  <mat-card *ngFor="let slide of slides" class="project-card ">
+     <img mat-card-image src="../../assets/images/{{slide}}" style="margin: -19px 0 0 -19px; height: 220px; width: 337px; padding: 0">
+     <div class="circle"></div>
+  <mat-card-content style="margin-top: 30px">
+    <h2>Kilimo Taarifa</h2>
+    <p style="color: grey">
+      Provide linkage between farmer and market and information on how to farm for productivi...
+    </p>
+    <h5 style="color: #636363">Tanzania</h5>
+  </mat-card-content>
+  <mat-card-actions>
+    <span style="font-size: 14px; color: grey"> Last donation 3w ago </span>
+    <mat-progress-bar
+      color="primary"
+      mode="determinate"
+      [value]="50"
+      [bufferValue]="75">
+    </mat-progress-bar>
+    <label style="font-size: 18px; margin: 20px 0">
+      <span > TZS 100,000 of </span>
+      <span style="color: grey"> TZS 1,000,000 </span>
+    </label>
+  </mat-card-actions>
+</mat-card>
+  </div>
+
+  <mat-carousel *ngIf="mobile"
+    timings="250ms ease-in"
+    [autoplay]="true"
+    interval="4000"
+    color="primary"
+    maxWidth="100"
+    [proportion]="cardHeight"
+    slides="5"
+    [loop]="true"
+    [hideArrows]="true"
+    [hideIndicators]="true"
+    [useKeyboard]="false"
+    [useMouseWheel]="false"
+    orientation="ltr"
+    overlay-origin="false"
+  >
+    <!--[image]="slide.image"-->
+    <mat-carousel-slide overlayColor="#FFFFFF" *ngFor="let slide of slides; let i = index">
+        <mat-card class="project-card ">
+          <img mat-card-image src="../../assets/images/{{slide}}" style="margin: -19px 0 0 -20px; height: 220px; width: 340px; padding: 0">
+            <div class="circle"></div>
+
+          <mat-card-content style="margin-top: 30px">
+            <h3>Kilimo Taarifa</h3>
+            <p style="color: grey">
+              Provide linkage between farmer and market and information on how to farm for productivi...
+            </p>
+            <h5 style="color: #636363">Tanzania</h5>
+          </mat-card-content>
+          <mat-card-actions>
+            <span style="font-size: 14px; color: grey"> Last donation 3w ago </span>
+            <mat-progress-bar
+              color="primary"
+              mode="determinate"
+              [value]="50"
+              [bufferValue]="75">
+            </mat-progress-bar>
+            <label style="font-size: 18px; margin: 20px 0">
+              <span > TZS 100,000 of </span>
+              <span style="color: grey"> TZS 1,000,000 </span>
+            </label>
+          </mat-card-actions>
+        </mat-card>
+
+    </mat-carousel-slide>
+  </mat-carousel>
+

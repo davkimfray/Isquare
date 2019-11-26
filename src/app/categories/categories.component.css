@@ -1,0 +1,15 @@
+.category-container {
+
+  display: inline-block;
+  margin-left: 5%;
+  width: 95%;
+}
+
+.btn {
+  font-size: 18px;
+  color: #FFFFFF;
+  background-color: #128608;
+  border-radius: 50px;
+  padding: 5px 40px;
+  margin: 2%;
+}

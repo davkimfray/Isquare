@@ -1,0 +1,36 @@
+<section class="banner">
+  <mat-carousel
+  timings="250ms ease-in"
+  [autoplay]="true"
+  interval="4000"
+  color="primary"
+  maxWidth="500"
+  proportion="50"
+  slides="5"
+  [loop]="true"
+  [hideArrows]="true"
+  [hideIndicators]="true"
+  [useKeyboard]="false"
+  [useMouseWheel]="false"
+  orientation="ltr"
+  overlay-origin="true"
+>
+  <!--[image]="slide.image"-->
+  <mat-carousel-slide
+    #matCarouselSlide
+    *ngFor="let slide of slides; let i = index"
+    [image]="'../../assets/images/'+slide"
+    overlayColor="#00000040"
+    overlay-origin="true"
+
+  >
+
+  </mat-carousel-slide>
+</mat-carousel>
+  <div class="overlay-text">
+    <label class="txt-better-economy">Fund Raising For StartUp, To Build A Better Economy, </label>
+    <label class="txt-raise-fund">Start Today</label>
+    <button mat-flat-button class="btn-raise-fund txt-raise-fund">
+      Raise Fund Now
+    </button>
+  </div></section>
